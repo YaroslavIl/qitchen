@@ -1,0 +1,44 @@
+.credits {
+    // padding: 20px;
+    padding: 1.85vh;
+    border-radius: 16px;
+    border: 1px solid rgba(239, 231, 210, 0.15);
+    transition: border ease-in-out 0.3s;
+
+    @media (any-hover: hover) and (pointer: fine) {
+        &:hover {
+            border: 1px solid rgba(239, 231, 210, 0.781);
+        }
+    }
+
+    // .credits__list
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    // .credits__item
+
+    &__item {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        &:not(&:last-child)::after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border: 1px solid rgba(239, 231, 210, 0.15);
+            rotate: -45deg;
+        }
+    }
+
+}

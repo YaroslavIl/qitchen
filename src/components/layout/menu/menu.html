@@ -1,0 +1,53 @@
+<div class="header__menu menu">
+	<button type="button" data-fls-menu class="menu__icon icon-menu"><span></span></button>
+	<div class="menu__logo logo">
+		<a href="index.html" class="logo__link">
+			<img src="@img/logo.svg" alt="qitchen logo" class="logo__img">
+		</a>
+	</div>
+	<nav class="menu__body">
+		<ul class="menu__mobile mobile">
+			<li class="mobile__item-decor"></li>
+			<li class="mobile__item">
+				<a href="menu.html" class="mobile__link">Menu</a>
+			</li>
+			<li class="mobile__item">
+				<a href="reservation.html" class="mobile__link">Reservation</a>
+			</li>
+			<li class="mobile__item">
+				<a href="about.html" class="mobile__link">About</a>
+			</li>
+			<li class="mobile__item">
+				<a href="contact.html" class="mobile__link">Contact</a>
+			</li>
+			<li class="mobile__item">
+				<a href="blog.html" class="mobile__link">Blog</a>
+			</li>
+			<li class="mobile__item-decor"></li>
+		</ul>
+		<ul class="menu__list"> 
+			<each loop='item in [
+					{"href": "menu.html","ancor": "menu"},
+					{"href": "about.html","ancor": "about"},
+					{"href": "reservation.html","ancor": "reservation"},
+				]'>
+				<if condition="'[[active]]' === '[[item.ancor]]'">
+					<li class="menu__item">
+						<a href="[[item.href]]" class="menu__link menu__link--active">[[item.ancor]]</a>
+					</li>
+				</if>
+				<else>
+					<li class="menu__item">
+						<a href="[[item.href]]" class="menu__link">[[item.ancor]]</a>
+					</li>
+				</else>
+			</each>
+		</ul>
+	</nav>
+</div>
+
+
+<!-- <fetch url="@components/layout/menu/menu.json">
+	<each loop='item in response'>
+	</each>
+</fetch> -->

@@ -1,0 +1,113 @@
+<script type="module" src="@components/pages/contact/contact.js"></script>
+<link rel="stylesheet" href="@components/pages/contact/contact.scss">
+
+<main class="page page--contact">
+    <div class="page__contact contact">
+        <section class="contact__hero">
+            <figure class="contact__img">
+                <img src="@img/contact/main.jpg" alt="страва на тарілці великим планом" class="contact__pic">
+            </figure>
+            <h1 class="contact__title">Contact</h1>
+        </section>
+        <div class="contact__connect-section connect-section">
+            <div class="connect-section__box">
+                <article class="connect-section__opening-hours">
+                    <h2 class="connect-section__title">Opening Hours</h2>
+                    <ul class="connect-section__list">
+                        <li class="connect-section__item">
+                            <span class="connect-section__day">Monday</span>
+                            <div class="connect-section__decor-line"></div>
+                            <span class="connect-section__time">16:00 - 22:30</span>
+                        </li>
+                        <li class="connect-section__item">
+                            <span class="connect-section__day">Tuesday</span>
+                            <div class="connect-section__decor-line"></div>
+                            <span class="connect-section__time">16:00 - 22:30</span>
+                        </li>
+                        <li class="connect-section__item">
+                            <span class="connect-section__day">Wednesday</span>
+                            <div class="connect-section__decor-line"></div>
+                            <span class="connect-section__time">16:00 - 22:30</span>
+                        </li>
+                        <li class="connect-section__item">
+                            <span class="connect-section__day">Thursday</span>
+                            <div class="connect-section__decor-line"></div>
+                            <span class="connect-section__time">16:00 - 22:30</span>
+                        </li>
+                        <li class="connect-section__item">
+                            <span class="connect-section__day">Friday</span>
+                            <div class="connect-section__decor-line"></div>
+                            <span class="connect-section__time">16:00 - 22:30</span>
+                        </li>
+                        <li class="connect-section__item">
+                            <span class="connect-section__day">Saturday & Sunday</span>
+                            <div class="connect-section__decor-line"></div>
+                            <span class="connect-section__time">16:00 - 22:30</span>
+                        </li>
+                    </ul>
+                </article>
+                <div class="connect-section__gallery">
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <figure class="connect-section__img  connect-section__img--icon-instagram">
+                            <img src="@img/contact/1.jpg" alt="страва великим планом" class="connect-section__pic">
+                        </figure>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <figure class="connect-section__img connect-section__img--icon-instagram">
+                            <img src="@img/contact/2.jpg" alt="страва великим планом вид зверху" class="connect-section__pic">
+                        </figure>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <figure class="connect-section__img connect-section__img--icon-instagram">
+                            <img src="@img/contact/3.jpg" alt="дві руки які тримають ніж і нарізють червону рибу" class="connect-section__pic">
+                        </figure>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <figure class="connect-section__img connect-section__img--icon-instagram">
+                            <img src="@img/contact/4.jpg" alt="страва яку солять" class="connect-section__pic">
+                        </figure>
+                    </a>
+                </div>
+                <div class="connect-section__location location">
+                    <div data-fls-map class="location__map map">
+                        <div data-fls-map-marker class="map__marker" data-fls-map-lat="50.449688" data-fls-map-lng="30.52348" data-fls-map-title="Title 1"></div>
+                        <div data-fls-map-body class="map__body" data-fls-map-lat="50.449688" data-fls-map-lng="30.52348"></div>
+                    </div>
+                    <!-- <include src="@components/layout/map/map.html"></include> -->
+                </div>
+                <article class="connect-section__social social">
+                    <h2 class="social__title">Get in touch</h2>
+                    <div class="social__info">
+                        <div class="social__item">
+                            <span class="social__name-item">Address</span>
+                            <address>23 Greenfield Avenue, Prague 120 00</address>
+                        </div>
+                        <div class="social__item">
+                            <span class="social__name-item">Phone</span>
+                            <a href="tel:+491234567890">+49 1234 567890</a>
+                        </div>
+                        <div class="social__item">
+                            <span class="social__name-item">Email</span>
+                            <a href="mailto:email@example.com">email@example.com</a>
+                        </div>
+                        <div class="social__item">
+                            <span class="social__name-item">Follow</span>
+                            <div class="social__link">
+                                <a target="_blank" href="http://facebook.com/">
+                                    <img src="@img/facebook.svg" alt="іконка facebook">
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com">
+                                    <img src="@img/instagram.svg" alt="іконка instagram">
+                                </a>
+                                <a target="_blank" href="https://x.com/">
+                                    <img src="@img/twiter.svg" alt="іконка twiter">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <include src="@components/custom/minifooter/minifooter.html"></include>
+        </div>
+    </div>
+</main>
