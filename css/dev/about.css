@@ -232,12 +232,9 @@
 }
 
 @media (max-width: 81.25em) {
-  .page .restaurant__info {
-    flex-direction: column;
-  }
   .page .restaurant__item {
     padding-top: 0.625rem;
-    flex: 0 1 9.375rem;
+    flex: 0 1 50%;
     min-height: 0;
   }
   .page .restaurant__item p {
@@ -246,6 +243,9 @@
   .page .restaurant__img {
     flex: 1 1 12.5rem;
     min-height: 0;
+  }
+  .page .restaurant__awards {
+    display: none;
   }
   .page .restaurant__title {
     max-width: 100%;
@@ -276,6 +276,10 @@
   .page .restaurant__img {
     flex: 1 1 auto;
     height: auto;
+    aspect-ratio: 320/200;
+  }
+  .page .restaurant__info {
+    flex-direction: column;
   }
 }
 
