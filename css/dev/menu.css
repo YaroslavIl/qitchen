@@ -1,0 +1,260 @@
+.page--menu {
+  min-height: 100svh;
+  height: auto;
+}
+.page__menu {
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-page__hero {
+  position: relative;
+  height: calc(100svh - clamp(0.75rem, -0.92rem + 5.04vw, 1.5rem));
+  padding-bottom: clamp(0.75rem, -0.92rem + 5.04vw, 1.5rem);
+  flex: 1 1 50%;
+}
+.menu-page__img {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.menu-page__img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.842), transparent);
+  pointer-events: none;
+}
+.menu-page__pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.menu-page__title {
+  font-family: "Forum", serif;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 4.125rem;
+  font-size: clamp(1.25rem, -4.096rem + 16.14vw, 7rem);
+  line-height: 1;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+.menu-page__internal-menu {
+  flex: 1 1 50%;
+  background: url("../assets/img/bgfon.webp") center/cover no-repeat;
+}
+
+.internal-menu__content-container {
+  padding-block: 2rem 5rem;
+  padding-inline: clamp(0.625rem, -33.58rem + 39.09vw, 6rem);
+  border-radius: 1rem;
+  border: 0.0625rem solid rgba(239, 231, 210, 0.15);
+  margin-bottom: 1rem;
+  transition: border ease-in-out 0.4s;
+  overflow: hidden;
+}
+.internal-menu__category {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.5rem;
+  margin-bottom: 4rem;
+}
+.internal-menu__maki, .internal-menu__uramaki, .internal-menu__special {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.internal-menu__maki:not(.internal-menu__maki:last-child, .internal-menu__uramaki:last-child, .internal-menu__special:last-child), .internal-menu__uramaki:not(.internal-menu__maki:last-child, .internal-menu__uramaki:last-child, .internal-menu__special:last-child), .internal-menu__special:not(.internal-menu__maki:last-child, .internal-menu__uramaki:last-child, .internal-menu__special:last-child) {
+  margin-bottom: 6rem;
+}
+.internal-menu__title {
+  font-family: "Forum", serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.internal-menu__title::after, .internal-menu__title::before {
+  max-width: 3.8125rem;
+  width: 100%;
+  height: 1.5625rem;
+}
+.internal-menu__title::after {
+  content: url(../assets/img/menu/rightDecore.svg);
+}
+.internal-menu__title::before {
+  content: url(../assets/img/menu/leftDecore.svg);
+}
+.internal-menu__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.internal-menu__wrapper {
+  transform: translate(-12.5rem, 0);
+  opacity: 0;
+  transition: all 0.2s ease-in 0s;
+}
+.internal-menu__item {
+  display: flex;
+  gap: 1.5rem;
+  transition: scale ease-in 0.3s;
+}
+.internal-menu__img {
+  aspect-ratio: 150/100;
+  flex-shrink: 0;
+}
+.internal-menu__pic {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+.internal-menu__text-block {
+  display: flex;
+  flex-direction: column;
+  padding-block: 0.875rem;
+  gap: 0.25rem;
+}
+.internal-menu__text-block p {
+  color: rgba(245, 242, 234, 0.7);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.internal-menu__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.625rem;
+}
+.internal-menu__subtitle {
+  font-family: "Forum", serif;
+  font-size: clamp(1rem, -0.071rem + 1.43vw, 1.375rem);
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  position: relative;
+  flex: 0 1 auto;
+}
+.internal-menu__subtitle--icon-lea {
+  display: flex;
+  align-items: center;
+}
+.internal-menu__subtitle--icon-lea::before {
+  font-family: "iconfont";
+  content: "\f106";
+  position: absolute;
+  right: -1.75rem;
+  font-size: 1.25rem;
+}
+.internal-menu__decor-line {
+  border-bottom: 0.0625rem dashed rgba(239, 231, 210, 0.15);
+  flex-grow: 1;
+}
+.internal-menu__price {
+  font-family: "Forum", serif;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+.category__item {
+  border-radius: 0.5rem;
+  border: 0.0625rem solid rgba(239, 231, 210, 0.15);
+  transition: border ease-in-out 0.4s;
+}
+.category__link {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+}
+@media (max-width: 100em) {
+  .internal-menu__inner {
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 68.75em) {
+  .internal-menu__price {
+    letter-spacing: 0.5;
+    font-size: 0.9375rem;
+  }
+}
+@media (max-width: 63.98125em) {
+  .page__menu {
+    flex-direction: column;
+  }
+  .page__menu .internal-menu__text-block {
+    width: 100%;
+  }
+  .page__menu .menu-page__hero {
+    height: 70svh;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 32.5em) {
+  .page__menu .internal-menu__category {
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+  }
+  .page__menu .menu-page__hero {
+    padding-bottom: 0;
+  }
+  .page__menu .internal-menu__content-container {
+    padding-block: 0.9375rem 1.875rem;
+  }
+  .page__menu .internal-menu__maki,
+  .page__menu .internal-menu__uramaki,
+  .page__menu .internal-menu__special {
+    gap: 1.25rem;
+  }
+  .page__menu .internal-menu__maki:not(.page__menu .internal-menu__maki:last-child,
+  .page__menu .internal-menu__uramaki:last-child,
+  .page__menu .internal-menu__special:last-child),
+  .page__menu .internal-menu__uramaki:not(.page__menu .internal-menu__maki:last-child,
+  .page__menu .internal-menu__uramaki:last-child,
+  .page__menu .internal-menu__special:last-child),
+  .page__menu .internal-menu__special:not(.page__menu .internal-menu__maki:last-child,
+  .page__menu .internal-menu__uramaki:last-child,
+  .page__menu .internal-menu__special:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  .page__menu .internal-menu__item {
+    flex-direction: column;
+  }
+  .page__menu .internal-menu__img {
+    aspect-ratio: 16/9;
+  }
+}
+@media (max-width: 21.875em) {
+  .internal-menu__subtitle {
+    letter-spacing: 0.5;
+    font-size: 0.9375rem;
+  }
+}
+@media (any-hover: hover) and (pointer: fine) {
+  .internal-menu__content-container:hover {
+    border: 0.0625rem solid rgba(239, 231, 210, 0.562);
+  }
+  .internal-menu__item:hover {
+    scale: 1.1;
+  }
+  .category__item:hover {
+    border: 0.0625rem solid rgba(239, 231, 210, 0.884);
+  }
+}

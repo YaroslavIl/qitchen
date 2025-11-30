@@ -1,0 +1,322 @@
+.rating {
+  display: inline-block;
+}
+.rating__items {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+.rating__item {
+  flex: 0 0 1rem;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAyMCAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjgxNTcgNy4xMjMyNUwxMi44NjcyIDYuNTI0MDdMMTAuMTUxNiAwLjEyNjQ2NUw3LjQzNjAxIDYuNTMzNzRMMC40ODc1NDkgNy4xMjMyNUw1Ljc2NDEzIDExLjY5NDNMNC4xNzkyMiAxOC40ODgyTDEwLjE1MTYgMTQuODgzNUwxNi4xMjQgMTguNDg4MkwxNC41NDg4IDExLjY5NDNMMTkuODE1NyA3LjEyMzI1Wk0xMC4xNTE2IDEzLjA3NjNMNi41MTc5MiAxNS4yNzAxTDcuNDg0MzMgMTEuMTMzOEw0LjI3NTg2IDguMzUwNThMOC41MDg3MiA3Ljk4MzM1TDEwLjE1MTYgNC4wODg3M0wxMS44MDQyIDcuOTkzMDFMMTYuMDM3IDguMzYwMjVMMTIuODI4NiAxMS4xNDM1TDEzLjc5NSAxNS4yNzk3TDEwLjE1MTYgMTMuMDc2M1oiIGZpbGw9IiNFRkU3RDIiLz4KPC9zdmc+Cg==") 0 0/1rem no-repeat;
+  transition: all 0.3s;
+}
+.rating__item--active {
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuNjY2NjcgMTAuMThMMTAuNzg2NyAxMi42NjY3TDkuNjkzMzMgNy45OEwxMy4zMzMzIDQuODI2NjdMOC41NCA0LjQyTDYuNjY2NjcgMEw0Ljc5MzMzIDQuNDJMMCA0LjgyNjY3TDMuNjQgNy45OEwyLjU0NjY3IDEyLjY2NjdMNi42NjY2NyAxMC4xOFoiIGZpbGw9IiNFRkU3RDIiLz4KPC9zdmc+Cg==") 0 0/1rem no-repeat;
+}
+.rating__item span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 1rem;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuNjY2NjcgMTAuMThMMTAuNzg2NyAxMi42NjY3TDkuNjkzMzMgNy45OEwxMy4zMzMzIDQuODI2NjdMOC41NCA0LjQyTDYuNjY2NjcgMEw0Ljc5MzMzIDQuNDJMMCA0LjgyNjY3TDMuNjQgNy45OEwyLjU0NjY3IDEyLjY2NjdMNi42NjY2NyAxMC4xOFoiIGZpbGw9IiNFRkU3RDIiLz4KPC9zdmc+Cg==") 0 0/1rem no-repeat;
+}
+.rating__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 0.25rem;
+  transform: translateX(100%);
+}
+[data-rating=set] .rating__item:not(:last-child)::after {
+  cursor: pointer;
+}
+.rating__input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: block;
+}
+[data-fls-rating=set] .rating__input {
+  cursor: pointer;
+}.page__about {
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+}
+
+.about__hero {
+  flex: 1 1 50%;
+  height: 100%;
+  position: relative;
+}
+.about__img {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.about__img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.842), transparent);
+  pointer-events: none;
+}
+.about__pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.about__title {
+  font-family: "Forum", serif;
+  position: absolute;
+  left: clamp(0.625rem, -37.708rem + 53.33vw, 5.625rem);
+  bottom: clamp(0.625rem, -32.917rem + 46.67vw, 5rem);
+  font-size: clamp(1.563rem, -7.137rem + 17.4vw, 7rem);
+  line-height: 1;
+  letter-spacing: 0.125rem;
+  max-width: 31.25rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+.about__restaurant {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  background: url("../assets/img/bgfon.webp") center/cover no-repeat;
+  min-width: 0;
+}
+
+.restaurant__box {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  row-gap: 1.48vh;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.restaurant__info {
+  display: flex;
+  gap: 1rem;
+}
+.restaurant__info--rev {
+  flex-direction: row-reverse;
+}
+.restaurant__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0 50%;
+  border-radius: 1rem;
+  border: 0.0625rem solid rgba(239, 231, 210, 0.15);
+  padding-inline: clamp(0.625rem, -5.769rem + 7.31vw, 3rem);
+  padding-block: 4.4vh;
+  transition: border ease-in-out 0.3s;
+}
+.restaurant__item p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.restaurant__title {
+  font-family: "Forum", serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
+  max-width: 20.625rem;
+  text-transform: uppercase;
+}
+.restaurant__title--decor {
+  text-align: center;
+  max-width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.restaurant__title--decor::after, .restaurant__title--decor::before {
+  max-width: 3.8125rem;
+  width: 100%;
+  height: 1.5625rem;
+}
+.restaurant__title--decor::after {
+  content: url(../assets/img/menu/rightDecore.svg);
+}
+.restaurant__title--decor::before {
+  content: url(../assets/img/menu/leftDecore.svg);
+}
+.restaurant__img {
+  border-radius: 1rem;
+  height: 34vh;
+  flex: 1 1 auto;
+  overflow: hidden;
+  width: 100%;
+}
+.restaurant__pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  opacity: 0.5;
+  transition: all ease-in-out 0.5s;
+}
+.restaurant__awards {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  overflow-x: auto;
+  min-width: 0;
+}
+.restaurant__awards::-webkit-scrollbar {
+  height: 0.25rem;
+}
+.restaurant__awards::-webkit-scrollbar-track {
+  background: rgba(239, 231, 210, 0.267);
+  border-radius: 0.625rem;
+}
+.restaurant__awards::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0.625rem;
+  transition: all 0.3s ease;
+}
+.restaurant__awards:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.274);
+}
+.restaurant__awards::-webkit-scrollbar-thumb:hover {
+  background: rgba(239, 231, 210, 0.932);
+}
+.restaurant__awards h3 {
+  font-family: "Forum", serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+.restaurant__awards p {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  letter-spacing: 0.0625rem;
+  text-align: center;
+  color: rgba(245, 242, 234, 0.7);
+  text-transform: uppercase;
+  max-width: 7.8125rem;
+}
+
+.awards__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border: 0.0625rem solid rgba(239, 231, 210, 0.15);
+  padding-inline: 2rem;
+  padding-block: 2.97vh;
+  flex: 0 0 18.625rem;
+  transition: all ease-in 0.2s;
+}
+
+.rating {
+  margin-top: 0.9375rem;
+}
+
+@media (max-width: 81.25em) {
+  .page .restaurant__info {
+    flex-direction: column;
+  }
+  .page .restaurant__item {
+    padding-top: 0.625rem;
+    flex: 0 1 9.375rem;
+    min-height: 0;
+  }
+  .page .restaurant__item p {
+    text-align: center;
+  }
+  .page .restaurant__img {
+    flex: 1 1 12.5rem;
+    min-height: 0;
+  }
+  .page .restaurant__title {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .page .restaurant__awards h3 {
+    font-size: 1.125rem;
+    letter-spacing: 0.03125rem;
+  }
+  .page .restaurant__awards p {
+    font-size: 0.6875rem;
+  }
+}
+
+@media (max-width: 63.98125em) {
+  .page {
+    height: auto;
+  }
+  .page .page__about {
+    flex-direction: column;
+  }
+  .page .about__hero {
+    height: 80svh;
+    flex: 1 1 auto;
+  }
+  .page .restaurant__img {
+    flex: 1 1 auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 32.5em) {
+  .page .restaurant__awards::-webkit-scrollbar {
+    display: none;
+  }
+  .page .awards__item {
+    flex: 1 1 100%;
+    padding-block: 1.25rem;
+  }
+  .page .restaurant__item {
+    flex: 1 1 auto;
+  }
+  .page .restaurant__title {
+    margin-bottom: 0.9375rem;
+  }
+}
+
+@media (any-hover: hover) {
+  [data-fls-rating=set] .rating__items:hover .rating__item {
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuNjY2NjcgMTAuMThMMTAuNzg2NyAxMi42NjY3TDkuNjkzMzMgNy45OEwxMy4zMzMzIDQuODI2NjdMOC41NCA0LjQyTDYuNjY2NjcgMEw0Ljc5MzMzIDQuNDJMMCA0LjgyNjY3TDMuNjQgNy45OEwyLjU0NjY3IDEyLjY2NjdMNi42NjY2NyAxMC4xOFoiIGZpbGw9IiNFRkU3RDIiLz4KPC9zdmc+Cg==") 0 0/1rem no-repeat;
+  }
+  [data-fls-rating=set] .rating__item:hover ~ .rating__item {
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAyMCAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjgxNTcgNy4xMjMyNUwxMi44NjcyIDYuNTI0MDdMMTAuMTUxNiAwLjEyNjQ2NUw3LjQzNjAxIDYuNTMzNzRMMC40ODc1NDkgNy4xMjMyNUw1Ljc2NDEzIDExLjY5NDNMNC4xNzkyMiAxOC40ODgyTDEwLjE1MTYgMTQuODgzNUwxNi4xMjQgMTguNDg4MkwxNC41NDg4IDExLjY5NDNMMTkuODE1NyA3LjEyMzI1Wk0xMC4xNTE2IDEzLjA3NjNMNi41MTc5MiAxNS4yNzAxTDcuNDg0MzMgMTEuMTMzOEw0LjI3NTg2IDguMzUwNThMOC41MDg3MiA3Ljk4MzM1TDEwLjE1MTYgNC4wODg3M0wxMS44MDQyIDcuOTkzMDFMMTYuMDM3IDguMzYwMjVMMTIuODI4NiAxMS4xNDM1TDEzLjc5NSAxNS4yNzk3TDEwLjE1MTYgMTMuMDc2M1oiIGZpbGw9IiNFRkU3RDIiLz4KPC9zdmc+Cg==") 0 0/1rem no-repeat;
+  }
+  [data-fls-rating=set] .rating__item:hover ~ .rating__item span {
+    display: none;
+  }
+}
+
+@media (any-hover: hover) and (pointer: fine) {
+  .restaurant__item:hover {
+    border: 0.0625rem solid rgba(239, 231, 210, 0.781);
+  }
+  .restaurant__img:hover .restaurant__pic {
+    opacity: 0.8;
+    scale: 1.05;
+  }
+  .awards__item:hover {
+    scale: 0.97;
+    border: 0.0625rem solid rgb(239, 231, 210);
+  }
+}

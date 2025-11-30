@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>reservation</title>
+		<script type="module" crossorigin="" src="./js/reservation.min.js?v=1764503307984"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1764503307984">
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1764503307984">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1764503307984">
+		<link rel="stylesheet" crossorigin="" href="./css/reservation.min.css?v=1764503307984">
+		<link rel="stylesheet" crossorigin="" href="./css/minifooter.min.css?v=1764503307984">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<div class="menu__logo logo">
+							<a href="index.html" class="logo__link">
+								<img src="./assets/img/logo.svg" alt="qitchen logo" class="logo__img">
+							</a>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__mobile mobile">
+								<li class="mobile__item-decor"></li>
+								<li class="mobile__item">
+									<a href="menu.html" class="mobile__link">Menu</a>
+								</li>
+								<li class="mobile__item">
+									<a href="reservation.html" class="mobile__link">Reservation</a>
+								</li>
+								<li class="mobile__item">
+									<a href="about.html" class="mobile__link">About</a>
+								</li>
+								<li class="mobile__item">
+									<a href="contact.html" class="mobile__link">Contact</a>
+								</li>
+								<li class="mobile__item">
+									<a href="blog.html" class="mobile__link">Blog</a>
+								</li>
+								<li class="mobile__item-decor"></li>
+							</ul>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="menu.html" class="menu__link">menu</a>
+								</li>
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">about</a>
+								</li>
+								<li class="menu__item">
+									<a href="reservation.html" class="menu__link menu__link--active">reservation</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page page--reservation">
+				<div class="page__reserv reserv">
+					<section class="reserv__hero">
+						<figure class="reserv__img">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/reservation/main-600.webp 1x,./assets/img/reservation/main-600-2x.webp 2x" type="image/webp">
+								<img alt="дівчина за столом на якому два бокали вина" class="reserv__pic" src="./assets/img/reservation/main.webp" srcset="./assets/img/reservation/main.webp 1x,./assets/img/reservation/main-2x.webp 2x">
+							</picture>
+						</figure>
+						<h1 class="reserv__title">Book a Table</h1>
+					</section>
+					<section class="reserv__content content">
+						<div class="content__box">
+							<h2 class="content__title">Reservation</h2>
+							<p>
+								Secure your spot at Qitchen, where exceptional sushi and a remarkable dining experience await.
+							</p>
+							<form data-fls-form="" action="files/sendmail/sendmail.php" method="POST">
+								<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="text" name="form[]" placeholder="Name" class="input">
+								<input data-fls-input="" data-fls-input-mask="+38(999) 999-9999" autocomplete="off" type="text" name="form[]" placeholder="Phone Number" class="input">
+								<input required type="email" name="form[email]" placeholder="Email" class="input">
+								<!-- <textarea data-fls-input autocomplete="off" name="form[]" placeholder="Введіть..." data-fls-form-errtext="Помилка" class="input"></textarea> -->
+								<!-- <textarea data-fls-input data-fls-input-autoheight autocomplete="off" name="form[]" placeholder="Введіть..." data-fls-form-errtext="Помилка" class="input"></textarea> -->
+								<div class="form-inner">
+									<!--
+<input data-fls-input autocomplete="off" type="password" name="form[]" data-fls-form-errtext="Помилка" value="123456" placeholder="Введіть..." class="input">
+<button data-fls-input-viewpass>Viewpass</button>
+-->
+									<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="text" name="form[]" placeholder="Guests" class="input">
+									<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="text" name="form[]" placeholder="Date" class="input">
+									<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="text" name="form[]" placeholder="Time" class="input">
+								</div>
+								<button type="submit" class="button">Reserve</button>
+							</form>
+						</div>
+						<div class="internal-menu__credits credits">
+							<ul class="credits__list">
+								<li class="credits__item">By Pawel Gola</li>
+								<li class="credits__item">Licensing</li>
+								<li class="credits__item">Styleguide</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container"></div>
+			</footer>
+		</div>
+	</body>
+</html>

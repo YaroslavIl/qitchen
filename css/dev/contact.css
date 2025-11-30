@@ -1,0 +1,300 @@
+[data-fls-map-body] {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+}.page__contact {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+}
+
+.contact__hero {
+  flex: 1 1 50%;
+  height: 100%;
+  position: relative;
+}
+.contact__img {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.contact__img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.842), transparent);
+  pointer-events: none;
+}
+.contact__pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.contact__title {
+  font-family: "Forum", serif;
+  position: absolute;
+  left: clamp(0.625rem, -37.708rem + 53.33vw, 5.625rem);
+  bottom: clamp(0.625rem, -32.917rem + 46.67vw, 5rem);
+  font-size: clamp(1.563rem, -7.137rem + 17.4vw, 7rem);
+  line-height: 1;
+  letter-spacing: 0.125rem;
+  max-width: 31.25rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+.contact__connect-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  background: url("../assets/img/bgfon.webp") center/cover no-repeat;
+  border-radius: 1rem;
+  gap: 1.48vh;
+}
+
+.connect-section__box {
+  height: auto;
+  display: grid;
+  gap: 1.48vh;
+  grid-template-columns: repeat(2, minmax(18.75rem, 1fr));
+  grid-template-rows: repeat(2, minmax(34vh, auto));
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.connect-section__opening-hours, .connect-section__social {
+  border-radius: 1rem;
+  border: 0.0625rem solid rgba(239, 231, 210, 0.15);
+  padding-inline: clamp(0.313rem, -12.357rem + 15.36vw, 3rem);
+  padding-top: 4.995vh;
+  padding-bottom: 4.44vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5vh;
+  justify-content: space-between;
+  overflow-x: auto;
+  transition: border ease-in-out 0.3s;
+}
+.connect-section__opening-hours::-webkit-scrollbar, .connect-section__social::-webkit-scrollbar {
+  width: 0.375rem;
+}
+.connect-section__opening-hours::-webkit-scrollbar-track, .connect-section__social::-webkit-scrollbar-track {
+  background: rgba(239, 231, 210, 0.1);
+  border-radius: 0.1875rem;
+}
+.connect-section__opening-hours::-webkit-scrollbar-thumb, .connect-section__social::-webkit-scrollbar-thumb {
+  background: rgba(239, 231, 210, 0.3);
+  border-radius: 0.1875rem;
+}
+.connect-section__opening-hours::-webkit-scrollbar-thumb:hover, .connect-section__social::-webkit-scrollbar-thumb:hover {
+  background: rgba(239, 231, 210, 0.5);
+}
+.connect-section__title {
+  font-family: "Forum", serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+.connect-section__title::after, .connect-section__title::before {
+  max-width: 1.9375rem;
+  width: 100%;
+  height: 1.5625rem;
+}
+.connect-section__title::after {
+  content: url(../assets/img/menu/rightDecoreS.svg);
+}
+.connect-section__title::before {
+  content: url(../assets/img/menu/leftDecoreS.svg);
+}
+.connect-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.48vh;
+}
+.connect-section__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.connect-section__day, .connect-section__time {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.connect-section__decor-line {
+  border-bottom: 0.0625rem dotted rgba(239, 231, 210, 0.15);
+  flex: 1 1 auto;
+}
+.connect-section__gallery {
+  display: grid;
+  column-gap: 1rem;
+  row-gap: 1.48vh;
+  grid-template-columns: repeat(2, minmax(6.25rem, 1fr));
+  grid-template-rows: repeat(2, minmax(20vh, 1fr));
+  min-height: 0;
+}
+.connect-section__gallery a {
+  overflow: hidden;
+  border-radius: 1rem;
+  display: block;
+}
+.connect-section__img {
+  position: relative;
+  transition: transform ease-in-out 0.5s;
+  will-change: transform;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.connect-section__img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.631372549);
+  opacity: 0;
+  transition: opacity ease-in-out 0.3s;
+}
+.connect-section__img--icon-instagram::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  font-size: 1.5625rem;
+  opacity: 0.2;
+  transition: opacity ease-in-out 0.3s;
+}
+.connect-section__pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  backface-visibility: hidden;
+}
+.location__map {
+  height: 100%;
+}
+
+.map__body {
+  border-radius: 1rem;
+}
+
+.social__title {
+  font-family: "Forum", serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+.social__title::after, .social__title::before {
+  max-width: 1.9375rem;
+  width: 100%;
+  height: 1.5625rem;
+}
+.social__title::after {
+  content: url(../assets/img/menu/rightDecoreS.svg);
+}
+.social__title::before {
+  content: url(../assets/img/menu/leftDecoreS.svg);
+}
+.social__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.social__item {
+  display: flex;
+  justify-content: space-between;
+}
+.social__item address,
+.social__item a {
+  max-width: 10rem;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  font-style: normal;
+}
+.social__name-item {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+.social__link {
+  display: flex;
+  gap: 0.875rem;
+}
+.social__link a img {
+  transition: scale ease-in-out 0.3s;
+}
+@media (max-width: 81.25em) {
+  .page {
+    height: auto;
+  }
+  .page .page__contact {
+    flex-direction: column;
+  }
+  .page .contact__hero {
+    height: 80svh;
+    flex: 1 1 auto;
+  }
+  .page .connect-section__opening-hours,
+  .page .connect-section__social {
+    padding-inline: 1.25rem;
+  }
+  .page .connect-section__gallery {
+    order: 4;
+  }
+  .page .connect-section__social {
+    order: 2;
+  }
+  .page .connect-section__opening-hours {
+    order: 1;
+  }
+  .page .connect-section__location {
+    order: 3;
+  }
+}
+@media (max-width: 43.75em) {
+  .page .connect-section__box {
+    grid-template-columns: minmax(18.75rem, 1fr);
+    grid-template-rows: auto;
+  }
+  .page .connect-section__title,
+  .page .social__title {
+    font-size: 1.25rem;
+  }
+}
+@media (any-hover: hover) and (pointer: fine) {
+  .connect-section__opening-hours:hover, .connect-section__social:hover {
+    border: 0.0625rem solid rgba(239, 231, 210, 0.781);
+  }
+  .connect-section__gallery a:hover .connect-section__img {
+    transform: scale(1.04);
+  }
+  .connect-section__gallery a:hover .connect-section__img::after {
+    opacity: 0.7;
+  }
+  .connect-section__gallery a:hover .connect-section__img--icon-instagram::before {
+    opacity: 1;
+  }
+  .social__link a:hover img {
+    scale: 1.2;
+  }
+}

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/common.min.js?v=1764503307983"></script>
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1764503307983"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1764503307983">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1764503307983">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<div class="menu__logo logo">
+							<a href="index.html" class="logo__link">
+								<img src="./assets/img/logo.svg" alt="qitchen logo" class="logo__img">
+							</a>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__mobile mobile">
+								<li class="mobile__item-decor"></li>
+								<li class="mobile__item">
+									<a href="menu.html" class="mobile__link">Menu</a>
+								</li>
+								<li class="mobile__item">
+									<a href="reservation.html" class="mobile__link">Reservation</a>
+								</li>
+								<li class="mobile__item">
+									<a href="about.html" class="mobile__link">About</a>
+								</li>
+								<li class="mobile__item">
+									<a href="contact.html" class="mobile__link">Contact</a>
+								</li>
+								<li class="mobile__item">
+									<a href="blog.html" class="mobile__link">Blog</a>
+								</li>
+								<li class="mobile__item-decor"></li>
+							</ul>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="menu.html" class="menu__link">menu</a>
+								</li>
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">about</a>
+								</li>
+								<li class="menu__item">
+									<a href="reservation.html" class="menu__link">reservation</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page page--index">
+				<section class="page__sushi sushi">
+					<div class="sushi__gallery gallery">
+						<div class="gallery__big-section">
+							<figure class="gallery__main-img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/homePage/bigImg-600.webp 1x,./assets/img/homePage/bigImg-600-2x.webp 2x" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/homePage/bigImg-1200.webp 1x,./assets/img/homePage/bigImg-1200-2x.webp 2x" type="image/webp">
+									<img alt="мясо в тарілці" class="gallery__image" src="./assets/img/homePage/bigImg.webp" srcset="./assets/img/homePage/bigImg.webp 1x,./assets/img/homePage/bigImg-2x.webp 2x">
+								</picture>
+							</figure>
+							<h1 class="gallery__title">Sushi Sensation</h1>
+							<div class="gallery__social social">
+								<a href="#" class="social__item social__item--icon-instagram"></a>
+								<a href="#" class="social__item social__item--icon-facebook"></a>
+								<a href="#" class="social__item social__item--icon-twitter"></a>
+							</div>
+						</div>
+						<div class="gallery__aside aside">
+							<a href="menu.html" class="aside__item">
+								<figure class="aside__picture">
+									<picture>
+										<img alt="блюдо зі стравою" class="aside__img" src="./assets/img/homePage/food.webp" srcset="./assets/img/homePage/food.webp 1x,./assets/img/homePage/food-2x.webp 2x">
+									</picture>
+								</figure>
+								<div class="aside__decore">
+									<div class="aside__link">
+										Menu
+										<span class="aside__card-arrow aside__card-arrow--icon-arrow"></span>
+									</div>
+								</div>
+							</a>
+							<a href="reservation.html" class="aside__item">
+								<figure class="aside__picture">
+									<picture>
+										<img alt="дівчина за столиком з двама бокалами вина" class="aside__img" src="./assets/img/homePage/girl.webp" srcset="./assets/img/homePage/girl.webp 1x,./assets/img/homePage/girl-2x.webp 2x">
+									</picture>
+								</figure>
+								<div class="aside__decore">
+									<div class="aside__link">
+										Reservation
+										<span class="aside__card-arrow aside__card-arrow--icon-arrow"></span>
+									</div>
+								</div>
+							</a>
+							<a href="about.html" class="aside__item">
+								<figure class="aside__picture">
+									<picture>
+										<img alt="барна стійка" class="aside__img" src="./assets/img/homePage/interior.webp" srcset="./assets/img/homePage/interior.webp 1x,./assets/img/homePage/interior-2x.webp 2x">
+									</picture>
+								</figure>
+								<div class="aside__decore">
+									<div class="aside__link">
+										Our Restaurant
+										<span class="aside__card-arrow aside__card-arrow--icon-arrow"></span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container"></div>
+			</footer>
+		</div>
+	</body>
+</html>

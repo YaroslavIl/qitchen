@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>menu</title>
+		<script type="module" crossorigin="" src="./js/menu.min.js?v=1764503307984"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1764503307984">
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1764503307984">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1764503307984">
+		<link rel="stylesheet" crossorigin="" href="./css/menu.min.css?v=1764503307984">
+		<link rel="stylesheet" crossorigin="" href="./css/minifooter.min.css?v=1764503307984">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<div class="menu__logo logo">
+							<a href="index.html" class="logo__link">
+								<img src="./assets/img/logo.svg" alt="qitchen logo" class="logo__img">
+							</a>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__mobile mobile">
+								<li class="mobile__item-decor"></li>
+								<li class="mobile__item">
+									<a href="menu.html" class="mobile__link">Menu</a>
+								</li>
+								<li class="mobile__item">
+									<a href="reservation.html" class="mobile__link">Reservation</a>
+								</li>
+								<li class="mobile__item">
+									<a href="about.html" class="mobile__link">About</a>
+								</li>
+								<li class="mobile__item">
+									<a href="contact.html" class="mobile__link">Contact</a>
+								</li>
+								<li class="mobile__item">
+									<a href="blog.html" class="mobile__link">Blog</a>
+								</li>
+								<li class="mobile__item-decor"></li>
+							</ul>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="menu.html" class="menu__link menu__link--active">menu</a>
+								</li>
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">about</a>
+								</li>
+								<li class="menu__item">
+									<a href="reservation.html" class="menu__link">reservation</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page page--menu">
+				<div class="page__menu menu-page">
+					<section class="menu-page__hero">
+						<figure class="menu-page__img">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/menu/mainImg-600.webp 1x,./assets/img/menu/mainImg-600-2x.webp 2x" type="image/webp">
+								<img alt="руки які ставлять страву на стіл" class="menu-page__pic" src="./assets/img/menu/mainImg.webp" srcset="./assets/img/menu/mainImg.webp 1x,./assets/img/menu/mainImg-2x.webp 2x">
+							</picture>
+						</figure>
+						<h1 class="menu-page__title">Menu</h1>
+					</section>
+					<aside class="menu-page__internal-menu internal-menu">
+						<div class="internal-menu__content-container">
+							<ul class="internal-menu__category category">
+								<li class="category__item">
+									<a href="#" data-fls-scrollto-top="30" data-fls-scrollto=".internal-menu__maki" class="category__link">Maki</a>
+								</li>
+								<li class="category__item">
+									<a href="#" data-fls-scrollto-top="30" data-fls-scrollto=".internal-menu__uramaki" class="category__link">UraMaki</a>
+								</li>
+								<li class="category__item">
+									<a href="#" data-fls-scrollto-top="30" data-fls-scrollto=".internal-menu__special" class="category__link">Special Rolls</a>
+								</li>
+							</ul>
+							<section class="internal-menu__maki">
+								<h2 class="internal-menu__title">Maki</h2>
+								<div class="internal-menu__info">
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="spicy-tuna">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi1.webp" srcset="./assets/img/menu/sushi1.webp 1x,./assets/img/menu/sushi1-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="spicy-tuna" class="internal-menu__subtitle internal-menu__subtitle--icon-lea">Spicy Tuna Maki</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>5</span>
+													</strong>
+												</div>
+												<p>
+													A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="mango-maki">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi2.webp" srcset="./assets/img/menu/sushi2.webp 1x,./assets/img/menu/sushi2-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="mango-maki" class="internal-menu__subtitle">Mango Maki</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>5</span>
+													</strong>
+												</div>
+												<p>
+													Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="salmon-maki">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi3.webp" srcset="./assets/img/menu/sushi3.webp 1x,./assets/img/menu/sushi3-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="salmon-maki" class="internal-menu__subtitle">Salmon Maki</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>5</span>
+													</strong>
+												</div>
+												<p>
+													Shiitake mushrooms, avocado, and pickled daikon radish nestle within a roll of seasoned rice, coated with nutty sesame seeds.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="tuna-maki">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi4.webp" srcset="./assets/img/menu/sushi4.webp 1x,./assets/img/menu/sushi4-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="tuna-maki" class="internal-menu__subtitle">Tuna Maki</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>5</span>
+													</strong>
+												</div>
+												<p>
+													A vibrant assortment of julienned carrots, bell peppers, and cucumber, tightly encased in a nori-wrapped rice roll.
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+							<section class="internal-menu__uramaki">
+								<h2 class="internal-menu__title">UraMaki</h2>
+								<div class="internal-menu__info">
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="volcano-delight">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi5.webp" srcset="./assets/img/menu/sushi5.webp 1x,./assets/img/menu/sushi5-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="volcano-delight" class="internal-menu__subtitle internal-menu__subtitle--icon-lea">Volcano Delight</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>12</span>
+													</strong>
+												</div>
+												<p>
+													Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="rainbow-fusion">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi6.webp" srcset="./assets/img/menu/sushi6.webp 1x,./assets/img/menu/sushi6-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="rainbow-fusion" class="internal-menu__subtitle">Rainbow Fusion</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>12</span>
+													</strong>
+												</div>
+												<p>
+													A colorful blend of fresh tuna, salmon, yellowtail, and avocado, enveloping a core of cucumber and crab stick.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="dragon-elegance">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi7.webp" srcset="./assets/img/menu/sushi7.webp 1x,./assets/img/menu/sushi7-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="dragon-elegance" class="internal-menu__subtitle">Dragon Elegance</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>12</span>
+													</strong>
+												</div>
+												<p>
+													Grilled eel and avocado nestled within the roll, draped with slices of ripe avocado resembling dragon scales.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="sunset-serenity">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi8.webp" srcset="./assets/img/menu/sushi8.webp 1x,./assets/img/menu/sushi8-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="sunset-serenity" class="internal-menu__subtitle">Sunset Serenity</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>12</span>
+													</strong>
+												</div>
+												<p>
+													Tempura shrimp, cucumber, and spicy mayo embraced by a roll of soy paper, crowned with slices of creamy mango.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="mystic-garden">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi9.webp" srcset="./assets/img/menu/sushi9.webp 1x,./assets/img/menu/sushi9-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="mystic-garden" class="internal-menu__subtitle">Mystic Garden</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>12</span>
+													</strong>
+												</div>
+												<p>
+													Shiitake mushrooms, asparagus, and cucumber intermingle with crispy tempura bits, blanketed by a layer of sesame seeds.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="ocean-breeze">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi10.webp" srcset="./assets/img/menu/sushi10.webp 1x,./assets/img/menu/sushi10-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="ocean-breeze" class="internal-menu__subtitle">Ocean Breeze</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>12</span>
+													</strong>
+												</div>
+												<p>
+													A medley of fresh shrimp, crab stick, and avocado, laced with a gentle touch of zesty yuzu-infused tobiko.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="tokyo-blossom">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi11.webp" srcset="./assets/img/menu/sushi11.webp 1x,./assets/img/menu/sushi11-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="tokyo-blossom" class="internal-menu__subtitle">Tokyo Blossom</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>12</span>
+													</strong>
+												</div>
+												<p>
+													Delicate pink soy paper envelopes a blend of tuna, crab stick, and cucumber, embellished with edible flower petals.
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+							<section class="internal-menu__special">
+								<h2 class="internal-menu__title">Special Rolls</h2>
+								<div class="internal-menu__info">
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="sunrise-bliss">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi12.webp" srcset="./assets/img/menu/sushi12.webp 1x,./assets/img/menu/sushi12-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="sunrise-bliss" class="internal-menu__subtitle internal-menu__subtitle--icon-lea">Sunrise Bliss</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>16</span>
+													</strong>
+												</div>
+												<p>
+													A delicate combination of fresh salmon, cream cheese, and asparagus, rolled in orange-hued tobiko for a burst of sunrise-inspired flavors.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="mango-tango-fusion">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi13.webp" srcset="./assets/img/menu/sushi13.webp 1x,./assets/img/menu/sushi13-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="mango-tango-fusion" class="internal-menu__subtitle internal-menu__subtitle--icon-lea">Mango Tango Fusion</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>16</span>
+													</strong>
+												</div>
+												<p>
+													Tempura shrimp, cucumber, and avocado dance alongside sweet mango slices, drizzled with a tangy mango sauce.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="truffle-indulgence">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi14.webp" srcset="./assets/img/menu/sushi14.webp 1x,./assets/img/menu/sushi14-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="truffle-indulgence" class="internal-menu__subtitle internal-menu__subtitle--icon-lea">Truffle Indulgence</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>16</span>
+													</strong>
+												</div>
+												<p>
+													Decadent slices of black truffle grace a roll of succulent wagyu beef, cucumber, and microgreens, culminating in an exquisite umami symphony.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="pacific-firecracker">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi15.webp" srcset="./assets/img/menu/sushi15.webp 1x,./assets/img/menu/sushi15-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="pacific-firecracker" class="internal-menu__subtitle internal-menu__subtitle--icon-lea">Pacific Firecracker</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>16</span>
+													</strong>
+												</div>
+												<p>
+													Spicy crab salad, tempura shrimp, and jalapeño peppers combine in a fiery ensemble, accented with a chili-infused aioli.
+												</p>
+											</div>
+										</article>
+									</div>
+									<div class="internal-menu__wrapper">
+										<article class="internal-menu__item" aria-labelledby="eternal-eel-enchantment">
+											<figure class="internal-menu__img">
+												<picture>
+													<img alt="різновид ролів на тарілці" class="internal-menu__pic" src="./assets/img/menu/sushi16.webp" srcset="./assets/img/menu/sushi16.webp 1x,./assets/img/menu/sushi16-2x.webp 2x">
+												</picture>
+											</figure>
+											<div class="internal-menu__text-block">
+												<div class="internal-menu__inner">
+													<h3 id="eternal-eel-enchantment" class="internal-menu__subtitle internal-menu__subtitle--icon-lea">Eternal Eel Enchantment</h3>
+													<div class="internal-menu__decor-line"></div>
+													<strong class="internal-menu__price">
+														$
+														<span>16</span>
+													</strong>
+												</div>
+												<p>
+													An enchanting blend of eel tempura, foie gras, and cucumber, elegantly layered with truffle oil and gold leaf for a touch of opulence.
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+						</div>
+						<!--
+<div class="internal-menu__credits credits">
+<ul class="credits__list">
+<li class="credits__item">By Pawel Gola</li>
+<li class="credits__item credits__item--icon-diamond">Licensing</li>
+<li class="credits__item credits__item--icon-diamond">Styleguide</li>
+</ul>
+</div>
+-->
+						<div class="internal-menu__credits credits">
+							<ul class="credits__list">
+								<li class="credits__item">By Pawel Gola</li>
+								<li class="credits__item">Licensing</li>
+								<li class="credits__item">Styleguide</li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container"></div>
+			</footer>
+		</div>
+	</body>
+</html>

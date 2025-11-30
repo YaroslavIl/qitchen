@@ -1,0 +1,216 @@
+.page {
+  background-color: #0A0B0A;
+  padding: clamp(0.75rem, -0.92rem + 5.04vw, 1.5rem);
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+.sushi {
+  height: 100%;
+}
+.gallery {
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+}
+.gallery__big-section {
+  position: relative;
+  flex: 1 1 70%;
+  min-width: 0;
+  transition: opacity ease 0.4s;
+  opacity: 0;
+}
+.gallery__main-img {
+  width: 100%;
+  height: 100%;
+}
+.gallery__image {
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.gallery__title {
+  font-family: "Forum", serif;
+  position: absolute;
+  bottom: 5.02%;
+  left: 5.27%;
+  color: #EFE7D2;
+  font-size: clamp(1.875rem, -0.37rem + 11.22vw, 8.75rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+  max-width: 68.1875rem;
+}
+.gallery__social {
+  display: flex;
+  position: absolute;
+  gap: 0.5rem;
+  bottom: 1rem;
+  right: 1rem;
+}
+.social__item {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem solid rgba(239, 231, 210, 0.15);
+  background-color: rgba(24, 24, 24, 0.5);
+  border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+}
+.aside {
+  flex: 1 1 15.75%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  height: 100%;
+}
+.aside__item {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  border-radius: 1rem 1rem 0 1rem;
+  overflow: clip;
+  transition: all 0.4s ease 0.4s;
+  opacity: 0;
+  transform: translate(12.5rem, 0);
+}
+.aside__picture, .aside__img {
+  width: 100%;
+  height: 100%;
+}
+.aside__img {
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 1rem;
+  opacity: 0.5;
+  transition: all ease-in-out 0.5s;
+}
+.aside__decore {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem 0 0 1.5rem;
+  background-color: #0A0B0A;
+  border-radius: 1.5625rem 0 0 0;
+}
+.aside__decore::after, .aside__decore::before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #0A0B0A;
+  background: radial-gradient(circle at top left, transparent 70%, #0A0B0A 71%);
+}
+.aside__decore::after {
+  top: -1.5rem;
+  right: 0;
+}
+.aside__decore::before {
+  left: -1.5rem;
+  bottom: 0;
+}
+.aside__link {
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.0625rem;
+  padding-left: 0.625rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  background-color: #0A0B0A;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.aside__card-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.0625rem solid rgba(239, 231, 210, 0.15);
+  background-color: rgba(24, 24, 24, 0.5);
+  transition: all ease-in-out 0.3s;
+}
+.aside__card-arrow::before {
+  rotate: 45deg;
+  font-size: 1.25rem;
+}
+@media (max-width: 68.75em) {
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery .gallery__big-section {
+    height: 50svh;
+  }
+  .gallery .gallery__aside {
+    flex-direction: row;
+  }
+}
+@media (max-width: 48em) {
+  .gallery .gallery__aside {
+    height: 50%;
+  }
+  .gallery .gallery__big-section {
+    height: 40svh;
+  }
+  .gallery .gallery__title {
+    font-size: 1.875rem;
+  }
+  .gallery .aside__link {
+    font-size: 0.75rem;
+  }
+  .gallery .aside__decore {
+    padding: 0.375rem 0 0 0.75rem;
+  }
+}
+@media (max-width: 33.125em) {
+  .gallery .gallery__title {
+    width: 100%;
+    left: 0;
+    bottom: 3.75rem;
+    text-align: center;
+  }
+  .gallery .aside__decore {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .gallery .aside__card-arrow {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: none;
+  }
+  .gallery .aside__card-arrow::before {
+    font-size: 0.9375rem;
+    display: none;
+  }
+  .gallery .aside__link {
+    font-size: 0.5625rem;
+  }
+  .gallery .gallery__title {
+    font-size: 1.25rem;
+  }
+}
+@media (any-hover: hover) and (pointer: fine) {
+  .social__item:hover {
+    border: 0.0625rem solid rgb(239, 231, 210);
+  }
+  .social__item:hover::before {
+    font-size: 1.25rem;
+  }
+  .aside__item:hover .aside__img {
+    opacity: 0.8;
+    scale: 1.05;
+  }
+  .aside__decore:hover .aside__link,
+  .aside__decore:hover .aside__card-arrow {
+    background-color: #EFE7D2;
+    color: #0A0B0A;
+  }
+}
